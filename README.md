@@ -45,6 +45,19 @@ The design goal is clarity, professionalism, and readability.
 The assets/ folder contains:
 - logo.png   
 - logo.svg 
+- html_validator.png
+- css_validator.png
+- screenshot home.png
+- screenshot form.png
+- screenshot FAQ.png
+
+# Validator Proofs
+
+# HTML Validation
+![HTML Validator](assets/html_validator.png)
+
+# CSS Validation
+![CSS Validator](assets/css_validator.png)
 
 # Link to Website
 
