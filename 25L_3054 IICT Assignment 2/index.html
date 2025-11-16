@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Online Tuitions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+  <div class="header-inner">
+    <img src="assets/logo.png" alt="Elite Online Tuitions logo" class="site-logo">
+    <h1>Elite Online Tuitions</h1>
+  </div>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#instructors">Instructors</a>
+    <a href="#plans">Plans</a>
+    <a href="#contact">Join Us</a>
+  </nav>
+</header>
+
+
+    <section class="hero">
+        <h2>High-Quality Online Tuition for O/IGCSE & A-Level Students</h2>
+        <p>Expert instructors • Flexible schedules • Affordable learning</p>
+    </section>
+
+    <section id="services" class="grid-3">
+        <article class="card">
+            <h3>O-Level / IGCSE</h3>
+            <p>Complete tuition for Maths, Physics, Chemistry & English.</p>
+        </article>
+        <article class="card">
+            <h3>A-Level</h3>
+            <p>Qualified instructors for A-Level Maths, Physics, Chemistry & English.</p>
+        </article>
+        <article class="card">
+            <h3>Monthly Feedback</h3>
+            <p>Students & parents receive monthly performance reports.</p>
+        </article>
+    </section>
+
+    <section id="instructors">
+        <h2 class="center">Meet Our Instructors</h2>
+        <div class="flex-row">
+            <div class="card teacher">
+                <h4>Sir Ahmed</h4>
+                <p>Maths & Physics — 10+ years experience</p>
+            </div>
+            <div class="card teacher">
+                <h4>Ms. Sarah</h4>
+                <p>English & Literature — Cambridge Certified</p>
+            </div>
+            <div class="card teacher">
+                <h4>Sir Ali</h4>
+                <p>Chemistry Specialist — A-Level Expert</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="plans">
+        <h2 class="center">Payment Plans</h2>
+        <div class="flex-row">
+            <div class="card plan">
+                <h3>Basic</h3>
+                <p>2 classes/week</p>
+                <strong>Rs. 8000/month</strong>
+            </div>
+            <div class="card plan">
+                <h3>Standard</h3>
+                <p>4 classes/week</p>
+                <strong>Rs. 12,000/month</strong>
+            </div>
+            <div class="card plan">
+                <h3>Premium</h3>
+                <p>Daily classes</p>
+                <strong>Rs. 18,000/month</strong>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="center">Join Our Tuition Program</h2>
+
+        <form aria-label="Tuition Admission Form">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <p>Select Subjects:</p>
+            <label class="cb"><input type="checkbox"> Maths </label>
+            <label class="cb"><input type="checkbox"> Physics </label>
+            <label class="cb"><input type="checkbox"> Chemistry </label>
+            <label class="cb"><input type="checkbox"> English </label>
+
+            <p>Select Plan:</p>
+            <label class="rb"><input type="radio" name="plan"> Basic </label>
+            <label class="rb"><input type="radio" name="plan"> Standard </label>
+            <label class="rb"><input type="radio" name="plan"> Premium </label>
+
+            <label for="level">Academic Level</label>
+            <select id="level">
+                <option>O-Level</option>
+                <option>IGCSE</option>
+                <option>A-Level</option>
+            </select>
+
+            <label for="msg">Additional Comments</label>
+            <textarea id="msg" rows="4"></textarea>
+            <button type="submit" class="ripple">Submit</button>
+
+        </form>
+    </section>
+
+    <section id="faq">
+        <h2 class="center">Frequently Asked Questions</h2>
+
+        <details>
+            <summary>Do you offer trial classes?</summary>
+            <p>Yes, students can take one free trial class.</p>
+        </details>
+
+        <details>
+            <summary>Are class recordings available?</summary>
+            <p>Yes, all classes are recorded and shared.</p>
+        </details>
+
+        <details>
+            <summary>Which subjects do you teach?</summary>
+            <p>We teach Maths, Physics, Chemistry, and English for O/A Levels.</p>
+        </details>
+    </section>
+
+    <footer>
+        <p>© 2025 Elite Online Tuitions</p>
+    </footer>
+
+</body>
+</html>

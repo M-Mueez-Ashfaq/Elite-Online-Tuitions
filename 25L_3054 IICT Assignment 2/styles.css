@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #F5F8FF;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background: #FFFFFF;
+    color: #111827;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;   
+    gap: 15px;               
+}
+
+.site-logo {
+    height: 130px;            
+    width: auto;
+    margin-left: 20px;    
+    transition: transform 0.4s ease;   
+}
+
+.site-logo:hover {
+    transform: scale(1.15);
+}
+
+header h1 {
+    font-size: 28px;        
+    line-height: 1;
+}
+@media (max-width:600px){ .header-inner{ flex-direction:column; gap:6px; text-align:center; } 
+}
+
+nav a {
+    color: #111827;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero {
+    background: #3454D1;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.flex-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(64, 98, 187, 0.3);
+}
+
+.center {
+    text-align: center;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 3px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.cb input,
+.rb input {
+    accent-color: #23395d;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #23395d;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background: #33559d;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.5);
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+button:hover::after {
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+}
+
+
+details {
+    background: white;
+    padding: 10px 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 700px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+details summary {
+    font-weight: bold;
+}
+
+details[open] {
+    background: #eef3ff;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: 2px solid #4062bb;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 30px 10px;
+    }
+    form {
+        width: 90%;
+    }
+    .flex-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #23395d;
+    color: white;
+    margin-top: 20px;
+}
+
+.cb, .rb {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin: 6px 0;
+}
+
+.cb input,
+.rb input {
+    width: auto; 
+}
