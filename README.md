@@ -47,11 +47,20 @@ The assets/ folder contains:
 - logo.svg 
 - html_validator.png
 - css_validator.png
-- screenshot home.png
-- screenshot form.png
-- screenshot FAQ.png
+- screenshot_home.png
+- screenshot_form.png
+- screenshot_FAQ.png
 
-# Validator Proofs
+# Screenshots
+
+# Home Section
+![Home](assets/screenshot_home.png)
+
+# Form Section
+![Form](assets/screenshot_form.png)
+
+# FAQ Section
+![FAQ](assets/screenshot_faq.png)
 
 # HTML Validation
 ![HTML Validator](assets/html_validator.png)
